@@ -5,12 +5,10 @@ from matplotlib import pyplot as plt
 from textblob import TextBlob
 from nltk.tokenize import sent_tokenize
 from bertopic import BERTopic
-from PIL import Image
-import cv2
 
-import numpy as np
+
 import pandas as pd
-from copy import deepcopy
+
 
 
 #Headings for Web Application

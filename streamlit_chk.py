@@ -7,7 +7,7 @@ from wordcloud import WordCloud
 from tqdm.notebook import tqdm
 from collections import Counter
 from textblob import TextBlob
-from nltk.corpus import stopwords
+import nltk
 import plotly.express as px
 import matplotlib.pyplot as plt
 from sklearn.feature_extraction.text import CountVectorizer

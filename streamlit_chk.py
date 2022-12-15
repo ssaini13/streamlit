@@ -133,8 +133,8 @@ if option == 'Sentiment Analysis':
 
     # In[11]:
 
-
-    stoplist = stopwords.words('english') + ['though']
+    #stopwords = stopwords.words('english')
+    stoplist = nltk.corpus.stopwords.words('english') + ['though']
     @st.cache
     def bigram(reviews):
         c_vec = CountVectorizer(stop_words=stoplist, ngram_range=(2,3))

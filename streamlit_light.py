@@ -7,13 +7,17 @@ from wordcloud import WordCloud
 from tqdm.notebook import tqdm
 from collections import Counter
 from textblob import TextBlob
-from nltk.corpus import stopwords
+#from nltk.corpus import stopwords
 import plotly.express as px
 import matplotlib.pyplot as plt
 from sklearn.feature_extraction.text import CountVectorizer
 import base64
 from PIL import Image
 from bertopic import BERTopic
+
+
+import nltk
+nltk.download('stopwords')
 
 def add_bg_from_local(image_file):
     with open(image_file, "rb") as image_file:
@@ -132,7 +136,7 @@ if option == 'Sentiment Analysis':
     # In[11]:
 
 
-    stoplist = stopwords.words('english') + ['though']
+    stoplist = nltk.corpus.stopwords.words('english') + ['though']
     @st.cache
     def bigram(reviews):
         c_vec = CountVectorizer(stop_words=stoplist, ngram_range=(2,3))

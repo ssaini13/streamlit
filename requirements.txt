@@ -33,6 +33,9 @@ grpcio==1.50.0
 h5py==3.7.0
 huggingface-hub==0.10.1
 importlib-metadata==5.0.0
+ipywidgets==7.6.3
+pandas-profiling==3.0.0
+widgetsnbextension==3.5.1
 kaleido==0.2.1
 keras==2.10.0
 Keras-Preprocessing==1.1.2
